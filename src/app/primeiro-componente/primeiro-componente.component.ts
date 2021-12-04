@@ -10,7 +10,10 @@ nome: string;
   constructor() { }
 
   ngOnInit(): void {
-    this.nome='Rodrigo Fernandes';
+    
+    }
+    criarNome(novoNome:string){
+      this.nome = novoNome;
   }
 
 }

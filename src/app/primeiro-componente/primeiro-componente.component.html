@@ -1,3 +1,8 @@
 <h1>Meu Primeiro Componente</h1>
 <!--databinding : {{}}-->
 <p>{{ nome }}</p>
+<!--Inserindo função para passar nome no input-->
+<div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">{{nome}}</span>
+</div>
+<input type="text" class="form-control" (input)="criarNome($event.target.value)">
