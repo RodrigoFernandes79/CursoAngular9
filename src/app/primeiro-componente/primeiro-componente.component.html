@@ -9,3 +9,9 @@
     <span class="input-group-text" id="basic-addon1">{{nome}}</span>
 </div>
 <input type="text" class="form-control" (input)="criarNome($event.target.value)">
+
+<!--Criando ngFor(percorrer uma lista)-->
+<!--Vai percorrer uma lista "item" na lista chamada "arrayValores" e mostra os dados atraves do databinding-->
+<div *ngFor="let item of arrayValores">
+    {{ item }}
+</div>
