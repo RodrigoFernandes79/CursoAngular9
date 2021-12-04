@@ -1,4 +1,7 @@
-<h1>Meu Primeiro Componente</h1>
+<!--Criando ngIf(condições)-->
+<!--Se o nome for igual a Rodrigo, ele mostra "Meu primeiro Componente"-->
+<h1 *ngIf="nome==='Rodrigo'">Meu Primeiro Componente</h1>
+
 <!--databinding : {{}}-->
 <p>{{ nome }}</p>
 <!--Inserindo função para passar nome no input-->
